@@ -1,0 +1,43 @@
+:root{
+  --zemin:#060d19; --zemin2:#0b2038; --kart:#0f2440; --cizgi:#1d3658;
+  --metin:#f3f7ff; --soluk:#98b0ca; --vurgu:#4ea3ff; --vurgu2:#c4deff;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; color:var(--metin); background:var(--zemin);
+  background-image:radial-gradient(1200px 600px at 50% -10%, var(--zemin2), transparent 70%);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; padding:0 16px;
+}
+a{color:var(--vurgu)}
+.ust{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.marka{display:flex;align-items:center;gap:10px;color:var(--metin);text-decoration:none;font-weight:700;font-size:18px}
+.marka img{width:34px;height:34px;border-radius:8px}
+.ust nav{display:flex;gap:18px;font-size:15px}
+.ust nav a{color:var(--soluk);text-decoration:none}
+.ust nav a:hover{color:var(--metin)}
+.kahraman{max-width:960px;margin:0 auto;text-align:center;padding:56px 0 28px}
+.kahraman img.ikon{width:112px;height:112px;border-radius:25px;box-shadow:0 20px 60px rgba(78,163,255,.25)}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;letter-spacing:-.02em;margin:26px 0 14px}
+.kahraman p{color:var(--soluk);font-size:clamp(17px,2.4vw,20px);max-width:620px;margin:0 auto}
+.rozet{display:inline-block;margin-top:28px;padding:12px 22px;border-radius:999px;background:var(--metin);color:#06101f;font-weight:700;text-decoration:none}
+.rozet.pasif{background:transparent;color:var(--vurgu2);border:1px solid var(--cizgi)}
+.sahne{max-width:1100px;margin:36px auto 0;border-radius:18px;overflow:hidden;border:1px solid var(--cizgi)}
+.sahne img{display:block;width:100%;height:auto}
+.ozellikler{max-width:960px;margin:56px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.ozellik{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:22px}
+.ozellik h3{margin:0 0 6px;font-size:18px}
+.ozellik p{margin:0;color:var(--soluk);font-size:15px}
+.icerik{max-width:720px;margin:0 auto;padding:40px 0 20px}
+.icerik h1{font-size:34px;margin:10px 0 6px}
+.icerik h2{font-size:20px;margin:34px 0 8px}
+.icerik p,.icerik li{color:#d3deec}
+.tarih{color:var(--soluk);font-size:14px;margin:0 0 28px}
+.etiket{display:inline-block;font-size:13px;font-weight:600;color:var(--vurgu2);background:rgba(78,163,255,.12);border:1px solid rgba(78,163,255,.3);padding:5px 12px;border-radius:999px}
+details{background:var(--kart);border:1px solid var(--cizgi);border-radius:12px;padding:14px 18px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0}
+.alt{max-width:960px;margin:64px auto 0;padding:24px 0 40px;border-top:1px solid var(--cizgi);color:var(--soluk);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+.alt a{color:var(--soluk)}
+@media (max-width:520px){.ust nav{gap:12px;font-size:14px}.kahraman{padding-top:32px}}
