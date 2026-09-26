@@ -41,3 +41,5 @@ details p{margin:10px 0 0}
 .alt{max-width:960px;margin:64px auto 0;padding:24px 0 40px;border-top:1px solid var(--cizgi);color:var(--soluk);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
 .alt a{color:var(--soluk)}
 @media (max-width:520px){.ust nav{gap:12px;font-size:14px}.kahraman{padding-top:32px}}
+.kahraman .not{display:block;margin-top:12px;color:var(--soluk);font-size:14px}
+.sss{padding-top:48px}
